@@ -1,0 +1,16 @@
+.tab {
+  &_active {
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: #2666FF;
+      position: absolute;
+      top: 18px;
+      left: 0;
+    }
+  }
+}

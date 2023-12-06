@@ -1,0 +1,119 @@
+.select {
+  border-radius: 8px !important;
+  border: 1px solid #2666FF !important;
+  background: rgba(2, 48, 159, 0.00) !important;
+  height: 39px;
+  color: white;
+  padding: 3px 11px 3px 11px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+
+  @media (max-width: 1279px) {
+    font-size: 15px;
+    height: 30px;
+    padding: 3px 8px 3px 8px;
+  }
+
+  @media (max-width: 719px) {
+    font-size: 10px;
+    height: 20px;
+  }
+
+  &__center {
+    justify-content: center;
+  }
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__img {
+    transition: .5s;
+
+    &_open {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__options {
+    border-radius: 8px;
+    border: 1px solid #2666FF;
+    background: rgba(2, 48, 159, 0.00);
+    position: absolute;
+    z-index: 2;
+    top: 48px;
+    width: 100%;
+    padding: 0;
+    font-size: 16px;
+    font-style: normal;
+    background: #01142C;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0;
+    pointer-events: none;
+    transition: .5s;
+
+    @media (max-width: 1279px) {
+      top: 40px;
+    }
+
+    @media (max-width: 719px) {
+      top: 30px;
+    }
+
+    &_isOpen {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      li {
+        padding: 3px 8px 3px 11px;
+        cursor: pointer;
+        line-height: 30px;
+        height: 39px;
+        border-bottom: 0.5px solid #2666FF;
+
+        @media (max-width: 719px) {
+          font-size: 11px;
+          padding: 1px 8px 1px 11px;
+        }
+
+        &:last-of-type {
+          border-bottom: none;
+        }
+      }
+
+      img {
+        @media (max-width: 719px) {
+          height: 16px;
+          width: 16px;
+        }
+      }
+    }
+  }
+
+  &__checked {
+    color: #2666FF;
+  }
+}
+
+.select__options_center {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}

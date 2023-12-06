@@ -1,0 +1,48 @@
+.arrow {
+  position: relative;
+  margin-right: 10px;
+
+  &:first-of-type {
+    & > div {
+      width: 180px;
+    }
+  }
+
+  & > div {
+    opacity: 0;
+    pointer-events: none;
+    padding: 8px 8px 15px 8px;
+    width: 120px;
+    top: 21px;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    background: #0A1424;
+    transition: opacity .5s;
+
+    ul {
+      margin: 0;
+      padding: 0 0 0 25px;
+
+      li {
+        margin: 5px;
+      }
+    }
+  }
+
+  &:hover > div {
+     pointer-events: auto;
+    opacity: 1;
+   }
+
+  &:after {
+    content: '';
+    background: url("../../assets/arrow-down.svg");
+    height: 20px;
+    width: 20px;
+    display: block;
+    position: absolute;
+    right: -23px;
+    top: 3px;
+  }
+}

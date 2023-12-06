@@ -1,0 +1,36 @@
+.sell__tab_block {
+  display: none;
+}
+
+.sell__tab_block_active {
+  display: block;
+  animation: appearTab .8s ease;
+
+  @media (max-width: 1279px) {
+    animation: appearTabTab .8s ease;
+  }
+}
+
+@keyframes appearTab {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes appearTabTab {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

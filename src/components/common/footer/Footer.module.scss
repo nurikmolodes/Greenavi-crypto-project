@@ -1,0 +1,130 @@
+.footer {
+  display: grid;
+  grid-template-columns: 290px 0.8fr 0.8fr 0.8fr 0.8fr 1fr;
+
+  @media (max-width: 1919px) {
+    grid-template-columns: 250px 0.6fr 0.8fr 0.7fr 0.7fr 1fr;
+  }
+
+  &__wrapper {
+    background: #0A1424;
+  }
+
+  &__title {
+    color: #2666FF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    margin-top: 0;
+    line-height: normal;
+    margin-bottom: 12px;
+  }
+
+  &__media {
+    display: flex;
+    gap: 11px;
+    margin-bottom: 23px;
+
+    @media (max-width: 520px) {
+      justify-content: center;
+      margin-top: 10px;
+    }
+  }
+
+  &__column {
+    margin-top: 52px;
+
+    @media (max-width: 1919px) {
+      margin-top: 30px;
+    }
+  }
+
+
+
+  &__links {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      margin-bottom: 15px;
+      cursor: pointer;
+      width: auto;
+    }
+  }
+
+  &__web {
+    display: block !important;
+
+    @media (max-width: 1279px) {
+      display: none !important;
+    }
+  }
+
+  &__tab {
+    display: none !important;
+
+    @media (max-width: 1279px) {
+      display: block !important;
+    }
+  }
+
+  &__email {
+    margin-bottom: 16px;
+    position: relative;
+    margin-left: 28px;
+
+    @media (max-width: 520px) {
+      display: inline-block !important;
+    }
+
+    &:before {
+      content: '';
+      background: url("assets/iconamoon_email-thin.svg");
+      height: 20px;
+      width: 20px;
+      display: block;
+      position: absolute;
+      left: -28px;
+      top: 2px;
+    }
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+    @media (max-width: 1279px) {
+      margin-top: 0;
+      padding-top: 20px;
+    }
+
+    @media (max-width: 520px) {
+      flex-direction: column;
+
+      & > div {
+        &:first-of-type {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+      }
+    }
+
+    p:first-of-type {
+      margin-top: 10px;
+
+      @media (max-width: 520px) {
+        margin-top: 0;
+      }
+
+    }
+  }
+}

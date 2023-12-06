@@ -1,0 +1,32 @@
+.input {
+  border-radius: 6px;
+  border: 1px solid #2666FF;
+  width: 100%;
+  outline: none;
+  height: 41px;
+  background: transparent;
+  padding: 10px;
+  color: white;
+  font-family: "Roboto Slab";
+  font-size: 16px;
+
+  &::placeholder {
+    font-size: 16px;
+  }
+}
+
+.input__validation {
+  //background: red;
+  border: 1px solid red !important;
+}
+
+.input__wrapper {
+  position: relative;
+
+  img {
+    position: absolute;
+    top: calc(50%);
+    transform: translateY(calc(-50% + 5px));
+    right: 3%;
+  }
+}

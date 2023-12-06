@@ -1,0 +1,17 @@
+.toast {
+  position: absolute;
+  right: 20px;
+  top: 100px;
+  width: 340px;
+  padding: 5px 10px;
+  background-color: red;
+  border-radius: 10px;
+  z-index: 440;
+  font-size: 14px;
+
+  @media (max-width: 720px) {
+    width: 280px;
+    font-size: 12px;
+    right: 10px;
+  }
+}

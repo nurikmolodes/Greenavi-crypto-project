@@ -1,0 +1,41 @@
+.currencyChange {
+  margin: 0 5px 0 0;
+  white-space: nowrap;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  color: #d34176;
+  position: relative;
+  margin-left: 20px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: -18px;
+    display: block;
+    background: url('../../assets/svgs/iconoir_arrow-up.svg');
+    height: 14px;
+    width: 14px;
+    background-repeat: no-repeat;
+  }
+
+  &_progress {
+    color: #64cb8c;
+    position: relative;
+    margin-left: 20px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 1px;
+      left: -18px;
+      display: block;
+      background: url('../../assets/svgs/iconoir_arrow-up.svg');
+      height: 14px;
+      width: 14px;
+      background-repeat: no-repeat;
+    }
+  }
+}

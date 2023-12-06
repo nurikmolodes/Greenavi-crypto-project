@@ -1,0 +1,92 @@
+.footer {
+  &__title {
+    color: #2666ff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    margin-top: 0;
+    line-height: normal;
+
+    @media (max-width: 520px) {
+      p {
+        position: relative;
+
+        &:after {
+          content: '';
+          background: url('../../../../../../assets/arrow-down.svg');
+          height: 22px;
+          width: 22px;
+          display: block;
+          background-size: cover;
+          position: absolute;
+          right: 0;
+          top: 0;
+          transform-origin: center;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+
+    &_p {
+      &:after {
+        transform: rotate(0);
+        transition: 0.5s;
+        top: -51px;
+      }
+
+      &_isOpen {
+        @media (max-width: 520px) {
+          &:after {
+            transform: rotate(180deg) !important;
+            top: -3px !important;
+          }
+        }
+      }
+    }
+  }
+
+  &__nav {
+    text-align: right;
+
+    @media (max-width: 520px) {
+      text-align: left;
+    }
+
+    &_logo {
+      @media (max-width: 520px) {
+        width: 300px;
+      }
+    }
+
+    ul {
+      list-style: none;
+      margin: 20px 0 0 0;
+      padding: 0;
+      font-size: 13px;
+
+      li {
+        margin-bottom: 4px;
+
+        @media (max-width: 520px) {
+          margin-bottom: 25px;
+        }
+      }
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+
+    div {
+      color: white;
+      font-weight: 400;
+      padding: 5px;
+      margin-bottom: 10px;
+      padding-right: 0;
+      //display: none;
+      height: 0;
+      overflow: hidden;
+      transition: 1s;
+    }
+  }
+}

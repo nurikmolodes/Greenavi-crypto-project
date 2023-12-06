@@ -1,0 +1,102 @@
+@import '../../../styles/style.scss';
+
+.blue,
+.darkblue,
+.pink,
+.green,
+.darkblue_org {
+  width: 100%;
+  padding: 11px;
+  background-color: #02309f;
+  color: white;
+  font-size: 14px;
+  border: 1px solid #2666ff;
+  outline: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.darkblue {
+  background-color: #02309f26;
+}
+
+.darkblue_org {
+  background-color: #02309f;
+}
+
+.blue {
+  background-color: #2666ff;
+  border: none;
+}
+
+.pink {
+  background-color: #d34176;
+  border: none;
+}
+
+.green {
+  background-color: #23af91;
+  border: none;
+}
+
+.small,
+.medium,
+.large {
+  @include tablet {
+    font-size: reduce-font-size(less);
+  }
+
+  @include mobile {
+    font-size: reduce-font-size(more);
+  }
+}
+
+.small {
+  $font-size: 12px;
+  font-size: $font-size;
+
+  @include tablet {
+    font-size: reduce-font-size($font-size, less);
+  }
+
+  @include mobile {
+    font-size: reduce-font-size($font-size, more);
+  }
+}
+
+.medium {
+  $font-size: 16px;
+  font-size: $font-size;
+
+  @include tablet {
+    font-size: reduce-font-size($font-size, less);
+  }
+
+  @include mobile {
+    font-size: reduce-font-size($font-size, more);
+  }
+}
+
+.large {
+  $font-size: 20px;
+  font-size: $font-size;
+
+  @include tablet {
+    font-size: reduce-font-size($font-size, less);
+  }
+
+  @include mobile {
+    font-size: reduce-font-size($font-size, more);
+  }
+}
+
+@function reduce-font-size($amount: less, $size: 14px) {
+  @if $amount == 'less' {
+    @return $size * 0.9; // 10% smaller
+  } @else if $amount == 'more' {
+    @return $size * 0.8; // 20% smaller
+  } @else {
+    @return $size;
+  }
+}
