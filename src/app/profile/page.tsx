@@ -126,7 +126,7 @@ const Page = () => {
   return (
     <>
       {user && (
-        <div style={{ fontFamily: 'Roboto Flex' }}>
+        <div style={{ fontFamily: 'Flex' }}>
           <section className='-mt-8'>
             <ContainerProfile>
               <div className='flex'>
