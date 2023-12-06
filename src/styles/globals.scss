@@ -69,9 +69,9 @@ h2 {
   font-weight: 500;
   margin: 0;
   line-height: 100%;
-  background: var(--p, linear-gradient(180deg, #e4c164 -15.7%, #b47f2d 100.6%));
-  background-clip: text;
-  -webkit-background-clip: text;
+  // background: var(--p, linear-gradient(180deg, #e4c164 -15.7%, #b47f2d 100.6%));
+  // background-clip: text;
+  // -webkit-background-clip: text;
   text-transform: uppercase;
   font-family: 'Roboto Slab', Tahoma, Geneva, Verdana, sans-serif !important;
   -webkit-text-fill-color: transparent;
@@ -88,11 +88,11 @@ h3 {
   font-size: 30px;
   font-weight: 600;
   margin: 0;
-  background: var(--p, linear-gradient(180deg, #e4c164 -15.7%, #b47f2d 100.6%));
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-transform: uppercase;
+  // background: var(--p, linear-gradient(180deg, #e4c164 -15.7%, #b47f2d 100.6%));
+  // background-clip: text;
+  // -webkit-background-clip: text;
+  // -webkit-text-fill-color: transparent;
+  // text-transform: uppercase;
 
   @media (max-width: 1279px) {
     font-size: 20px;

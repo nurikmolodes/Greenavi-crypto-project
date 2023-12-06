@@ -11,8 +11,8 @@ export const HeaderSection: FC = () => {
       <div className={styles.container}>
         <div className={styles.header_section_text}>
           <h3>
-            инновационная криптовалютная биржа с расширенными финансовыми
-            предложениями.
+            Инновационная Криптовалютная Биржа С Расширенными Финансовыми
+            Предложениями.
           </h3>
 
           <div className={styles.header_section_button}>
