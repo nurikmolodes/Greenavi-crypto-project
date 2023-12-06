@@ -19,12 +19,15 @@ const useGetFullList = create<FullList>((set) => ({
   fetchData: async (token: string) => {
     try {
       // Replace 'YOUR_API_ENDPOINT' with your actual API endpoint
-      const response = await axios.get<ListData[]>("https://app.greenavi.com/api/p2p/full-list", {
-        headers: {
-          Authorization: `Bearer ${token}`,
-          // Add other headers as needed
+      const response = await axios.get<ListData[]>(
+        'https://app.greenavi.com/api/p2p/full-list',
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+            // Add other headers as needed
+          },
         },
-      });
+      );
 
       set({ data: response.data });
     } catch (error) {
