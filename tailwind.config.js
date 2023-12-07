@@ -45,7 +45,7 @@ module.exports = {
     fontFamily: {
       // sans: ['Roboto Slab', 'sans-serif'],
       // flex: ['Roboto Flex', 'sans-serif'],
-      serif: ['Merriweather', 'serif'],
+      // serif: ['Merriweather', 'serif'],
     },
     container: {
       center: true,
