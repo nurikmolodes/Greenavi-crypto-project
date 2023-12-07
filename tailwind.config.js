@@ -43,8 +43,8 @@ module.exports = {
       warningBackground: 'rgba(245, 155, 19, 0.10)',
     },
     fontFamily: {
-      sans: ['Roboto Slab', 'sans-serif'],
-      flex: ['Roboto Flex', 'sans-serif'],
+      // sans: ['Roboto Slab', 'sans-serif'],
+      // flex: ['Roboto Flex', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
     },
     container: {
